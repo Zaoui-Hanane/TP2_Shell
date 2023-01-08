@@ -1,0 +1,10 @@
+#!/bin/bash
+gcc P1.c -o p1
+if [ $? -eq 0 ] ;then
+read -p "Est ce que vous voulez compiler ce programme (N/O)?" repon
+if [ "$repon" == "O" ] ;then 
+   ./p1 
+fi 
+else 
+echo "error de compilation"
+fi
